@@ -1,0 +1,38 @@
+.Navbar{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Navbar .list{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+.list div p{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 16px;
+    cursor: pointer;
+    color: hsla(210, 26%, 7%, 0.7);
+    transition: color 0.2s ease-in-out;
+}
+.list div p:hover{
+    color: hsla(210, 26%, 7%, 1);
+}
+@media(max-width:1380px){
+    .list{
+        width: 40%;
+    }
+}
+/*
+clip-path:('M13.100000381469727,0.0 L0.0,189.39999389648438 L39.5,268.29998779296875 L44.70000076293945,386.70001220703125 L328.79998779296875,499.79998779296875 L399.79998779296875,69.69999694824219 L136.8000030517578,78.9000015258789 Z')
+*/

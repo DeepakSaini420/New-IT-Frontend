@@ -75,9 +75,15 @@ export default function Home() {
           <p>Why Us</p>
         </div>
         <div className={styles.services}>
-          <WhyUsCard/>
-          <WhyUsCard/>
-          <WhyUsCard/>
+          <div>
+            <WhyUsCard/>
+          </div>
+          <div>
+            <WhyUsCard/>
+          </div>
+          <div>
+            <WhyUsCard/>
+          </div>
         </div>
       </div>
       <div className={styles.footer}>

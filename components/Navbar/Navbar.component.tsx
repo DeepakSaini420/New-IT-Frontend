@@ -1,21 +1,52 @@
-import React from 'react'
+"use client"
+import React,{useState} from 'react'
 import styles from './Navbar.module.css'
 
 function Navbar() {
-  return (
-    <nav className={styles.Navbar}>
-        {/* <div className={styles.list}>
-            <div>
-                <p>Home</p>
+    const [isOpen,setIsOpen] = useState<boolean>(false);
+
+    return (
+        <nav className={styles.Navbar}>
+            <div className={styles.list}>
+                <div>
+                    <p>Home</p>
+                </div>
+                <div>
+                    <p>Services</p>
+                </div>
+                <div>
+                    <p>Contact</p>
+                </div>
             </div>
-            <div>
-                <p>Services</p>
+            <div className={styles.toggle} onClick={()=>setIsOpen(true)}>
+                <div className={styles.item1}></div>
+                <div className={styles.item2}></div>
             </div>
-            <div>
-                <p>Contact</p>
-            </div>
-        </div> */}
-    </nav>
+            {
+                isOpen && (
+                    <>
+                        <div className={styles.sideBar}>
+                            <div className={styles.closeTag} onClick={()=>setIsOpen(false)}>
+                                <div>
+                                    <div className={styles.item1_active}></div>
+                                    <div className={styles.item2_active}></div>
+                                </div>
+                            </div>
+                            <div>
+                                <p>Home</p>
+                            </div>
+                            <div>
+                                <p>Services</p>
+                            </div>
+                            <div>
+                                <p>Contact</p>
+                            </div>
+                        </div>
+                        <div className={styles.back}/>
+                    </>
+                )
+            }
+        </nav>
   )
 }
 

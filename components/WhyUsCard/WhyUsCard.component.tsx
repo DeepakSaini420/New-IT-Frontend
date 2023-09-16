@@ -3,19 +3,19 @@ import WhyUs from '../../imgs/whyUsBack.svg';
 import ComputerIcon from '../../imgs/computer.svg';
 import styles from './WhyUsCard.module.css';
 
-const WhyUsCard = ()=>{
+const WhyUsCard = ({img,text,title}:{img:any,text:string,title:string})=>{
     return (
         <div className={styles.whyUs}>
             <div className={styles.imageContainer}>
                 <Image src={WhyUs} alt='' className={styles.backgroundImage}/>
-                <Image src={ComputerIcon} alt='' className={styles.innerIcon}/>
+                <Image src={img} alt='' className={styles.innerIcon}/>
             </div>
             <div className={styles.content}>
                 <div className={styles.title}>
-                    <p>Expertise and Technology Stack</p>
+                    <p>{title}</p>
                 </div>
                 <div className={styles.description}>
-                    <p>our company boasts a diverse and skilled team proficient in a wide range of technologies</p>
+                    <p>{text}</p>
                 </div>
             </div>
         </div>

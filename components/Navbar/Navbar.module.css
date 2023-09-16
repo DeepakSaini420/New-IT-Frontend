@@ -28,9 +28,139 @@
 .list div p:hover{
     color: hsla(210, 26%, 7%, 1);
 }
+.item1{
+    width: 45px;
+    height: 5px;
+    border-radius: 8px;
+    background-color: black;
+    transition: 0.2s;
+    transition-delay: 0.8s;
+
+}
+.item2{
+    width: 45px;
+    height: 5px;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    background-color: black;
+    transition: 0.2s;
+    transition-delay: 0.8s;
+}
+
+.item1_active{
+    width: 45px;
+    height: 5px;
+    border-radius: 8px;
+    background-color: #000;
+    transform: translate(0, 0px) rotate(-45deg);
+    transition: 0.2s;
+    /* margin-top: 0.2rem; */
+}
+.item2_active{
+    width: 45px;
+    height: 5px;
+    margin-top: -0.3rem;
+    border-radius: 8px;
+    background-color: #000;
+    transform: translate(0, 0px) rotate(45deg);
+    transition: 0.2s;
+}
+
 @media(max-width:1380px){
     .list{
         width: 40%;
+    }
+}
+.sideBar{
+    position: fixed;
+    top: 0;
+    right: -1500px;
+    bottom: 0;
+    background-color: white;
+    width: 15rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    animation: sideBarOpen 0.4s ease-in-out  1 forwards;
+}
+/* .sideBarClose{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    width: 15rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    animation: sideBarCloseAnimation 0.4s ease-in-out  1 forwards;
+} */
+.sideBar div p{
+    margin-top: 1rem;
+    font-size: 15px;
+    color: hsla(210, 26%, 7%, 0.7);
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.5s all;
+}
+.sideBar div p:hover{
+    color: hsla(210, 26%, 7%, 1);
+}
+.back{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+.closeTag{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.toggle{
+    display: none;
+}
+@keyframes sideBarOpen {
+    0%{
+        right: -1500px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+@keyframes sideBarCloseAnimation {
+    0%{
+        right: 0px;
+    }
+    100%{
+        right: -1500px;
+    }
+}
+
+@media only screen and (max-width:1150px) {
+    .Navbar .list{
+        width: 28%;
+    }
+}
+@media only screen and (max-width:890px) {
+    .Navbar .list{
+        width: 35%;
+    }
+}
+@media only screen and (max-width:700px) {
+    .Navbar .list{
+        display: none;
+    }
+    .toggle{
+        display: block;
     }
 }
 /*

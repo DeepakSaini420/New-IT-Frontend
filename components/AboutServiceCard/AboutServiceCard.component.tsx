@@ -1,12 +1,11 @@
 import Image from 'next/image';
-import mobileApp from '../../imgs/mobile_app.jpg';
 import styles from './AboutServiceCard.module.css';
 
-const AboutServiceCard = ({title,description,}:{title:string,description:string,})=>{
+const AboutServiceCard = ({title,description,img}:{title:string,description:string,img:any})=>{
     return (
         <div className={styles.aboutServiceCard}>
             <div className={styles.imgContanier}>
-                <Image src={mobileApp} alt='img.png' fill={true} />
+                <Image src={img} alt='img.png' fill={true} />
             </div>
             <div className={styles.content}>
                 <div className={styles.title}>

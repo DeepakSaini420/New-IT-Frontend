@@ -1,9 +1,15 @@
 import Image from 'next/image'
 import Button from '../../components/Button/Button.component'
 import Navbar from '../../components/Navbar/Navbar.component'
-import backImg from '../../imgs/back.svg'
-import starImg from '../../imgs/star.svg'
+import backImg from '../../imgs/back.svg';
+import starImg from '../../imgs/star.svg';
 import headImg from '../../imgs/head.jpg';
+import cloudImg from '../../imgs/cloud_solutions.jpg';
+import webImg from '../../imgs/web_appjpg.jpg';
+import mobileImg from '../../imgs/mobile_app.jpg';
+import chatImg from '../../imgs/chat.svg';
+import webSvg from '../../imgs/websvg.svg';
+import computerImg from '../../imgs/computer.svg';
 import styles from './page.module.css'
 import AboutServiceCard from '../../components/AboutServiceCard/AboutServiceCard.component'
 import WhyUsCard from '../../components/WhyUsCard/WhyUsCard.component'
@@ -60,13 +66,13 @@ export default function Home() {
         </div>
         <div className={styles.aboutServices}>
           <div className={styles.aboutServiceContainer}>
-            <AboutServiceCard title='Mobile App Development' description='We build user-friendly iOS and Android apps, handling design, security, and scalability, with ongoing support.'/>
+            <AboutServiceCard title='Mobile App Development' img={mobileImg}  description='We build user-friendly iOS and Android apps, handling design, security, and scalability, with ongoing support.'/>
           </div>
           <div className={styles.aboutServiceContainer}>
-            <AboutServiceCard title='Web App Development' description='Web Development: C++, Java, React. AWS Integration. Responsive Design. Maintenance, Support, Consulting.'/>
+            <AboutServiceCard title='Web App Development' img={webImg} description='Web Development: C++, Java, React. AWS Integration. Responsive Design. Maintenance, Support, Consulting.'/>
           </div>
           <div className={styles.aboutServiceContainer}>
-            <AboutServiceCard title='Cloud Solutions' description='AWS Services: Scalable, secure cloud solutions, including architecture, deployment, migration, and strategic consulting.'/>
+            <AboutServiceCard title='Cloud Solutions' img={cloudImg} description='AWS Services: Scalable, secure cloud solutions, including architecture, deployment, migration, and strategic consulting.'/>
           </div>
         </div>
       </div>
@@ -76,13 +82,13 @@ export default function Home() {
         </div>
         <div className={styles.services}>
           <div>
-            <WhyUsCard/>
+            <WhyUsCard img={webSvg} title={'We are global'} text={"No matter where you are, we've got you covered."} />
           </div>
           <div>
-            <WhyUsCard/>
+            <WhyUsCard img={chatImg} title={'We value our clients'} text={"Virtual assistance. Talk to us about any concerns, 24/7."}/>
           </div>
           <div>
-            <WhyUsCard/>
+            <WhyUsCard img={computerImg} title={'Expertise and Technology Stack'} text={"our company boasts a diverse and skilled team proficient in a wide range of technologies"}/>
           </div>
         </div>
       </div>

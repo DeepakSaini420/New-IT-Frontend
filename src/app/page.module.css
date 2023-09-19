@@ -251,9 +251,11 @@
 }
 @media only screen and (max-width:1260px) {
   .header{
-    height: 140vh;
+    height: 138vh;
+    align-items: flex-start;
   }
   .headContent{
+    margin-top: 2rem;
     flex-direction: column;
     align-items: center;
   }
@@ -264,9 +266,14 @@
     margin-top: 25rem;
   }
 }
+@media only screen and (max-width:870px) {
+  .footer .footerDescription div p{
+    font-size: 2.8rem;
+  }
+}
 @media only screen and (max-width:790px) {
   .services{
-    min-height: 100vh;
+    min-height: 130vh;
   }
 }
 @media only screen and (max-width:680px) {
@@ -274,10 +281,29 @@
     width: 30rem;
     margin-top: 3rem;
   }
+  .footer .footerDescription div p{
+    font-size: 2.5rem;
+  }
+  .headContent .content .headDescription p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 3.2rem;
+    letter-spacing: 1.5px;
+    line-height: 65px;
+  }
 }
 @media only screen and (max-width:580px) {
   .services{
     min-height: 150vh;
+  }
+  .footer .footerDescription div p{
+    font-size: 1.6rem;
+  }
+  .contactUsContent p:first-child{
+    font-size: 2.5rem;
+  }
+  .contactUsContent p:nth-child(2){
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width:480px) {
@@ -293,9 +319,36 @@
     height: 33vh;
   }
   .footerDescription div p{
-    font-size: 1.8rem;
+    font-size: 0.2rem;
   }
   .contactUs{
     min-height: 30vh;
+  }
+  .headContent .content .headDescription p{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    line-height: 50px;
+  }
+  .content{
+    margin-top: 3rem;
+  }
+  .header{
+    height: 138vh;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+  }
+  .headImageContianer .headImg{
+    width: 290px;
+    height: 500px;
+  }
+  .headImageContianer .backImg{
+    width: 400px;
+    height: 700px;
+  }
+  .headImageContianer .starImg{
+    width: 1000px;
+    height: 100px;
   }
 }

@@ -6,6 +6,9 @@
   scroll-behavior: smooth;
   font-family: 'Open Sans', sans-serif;
 }
+body{
+  overflow-x: hidden;
+}
 @media only screen and (max-width:1300px) {
   html {
     font-size: 80%;

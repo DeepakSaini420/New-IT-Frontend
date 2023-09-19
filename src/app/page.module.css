@@ -348,7 +348,11 @@
     height: 700px;
   }
   .headImageContianer .starImg{
-    width: 1000px;
+    width: 100px;
     height: 100px;
+  }
+  .contactUs{
+    height: 100vh;
+    align-items: flex-start;
   }
 }

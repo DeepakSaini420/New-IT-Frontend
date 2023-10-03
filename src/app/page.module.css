@@ -135,7 +135,7 @@
   font-weight: 700;
 }
 .aboutServices{
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -183,7 +183,7 @@
 }
 .footerDescription div p{
   font-weight: 800;
-  color:#31a5e8;
+  color:#d9d1d1;
   font-size: 3.8rem;
 }
 .contactUs{
@@ -206,11 +206,11 @@
   font-weight: 800;
   font-size: 3.5rem;
   letter-spacing: 2px;
-  color: #31a5e8;
+  color: #05abc4;
 }
 
 .contactUsContent p:nth-child(2){
-  color: #31a5e8;
+  color: #05abc4;
   font-size: 1.2rem;
   margin-top: 1rem;
 }
@@ -228,7 +228,7 @@
   font-weight: 800;
   font-size: 1.8rem;
   letter-spacing: 1.5px;
-  color: #31a5e8;
+  color: #05abc4;
 }
 
 .emailUsContainer p:nth-child(2){

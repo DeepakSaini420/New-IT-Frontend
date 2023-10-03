@@ -69,7 +69,7 @@ export default function Home() {
             <AboutServiceCard title='Mobile App Development' img={mobileImg}  description='We build user-friendly iOS and Android apps, handling design, security, and scalability, with ongoing support.'/>
           </div>
           <div className={styles.aboutServiceContainer}>
-            <AboutServiceCard title='Web App Development' img={webImg} description='Web Development: C++, Java, React. AWS Integration. Responsive Design. Maintenance, Support, Consulting.'/>
+            <AboutServiceCard title='Web App Development' img={webImg} description='DevOps and Architecture (Docker, Kubernetes, Ansible, RabbitMQ ...), Fullstack development - frontend (React, NodeJS, NextJS, Flutter) & backend (Java/Kotlin, Python, C++, .NET), '/>
           </div>
           <div className={styles.aboutServiceContainer}>
             <AboutServiceCard title='Cloud Solutions' img={cloudImg} description='AWS Services: Scalable, secure cloud solutions, including architecture, deployment, migration, and strategic consulting.'/>

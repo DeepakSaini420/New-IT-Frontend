@@ -74,6 +74,9 @@ export default function Home() {
           <div className={styles.aboutServiceContainer}>
             <AboutServiceCard title='Cloud Solutions' img={cloudImg} description='AWS Services: Scalable, secure cloud solutions, including architecture, deployment, migration, and strategic consulting.'/>
           </div>
+          <div className={styles.aboutServiceContainer}>
+            <AboutServiceCard title='Cyber security' img={mobileImg}  description='Data and systems protection. Cybersecurity solutions tailored to specific needs. Cutting-edge technology, security audits, advanced threat detection and incident response. '/>
+          </div>
         </div>
       </div>
       <div className={styles.whyUs}>

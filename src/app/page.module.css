@@ -103,12 +103,12 @@
   width: 30rem;
 }
 .softSol p{
-  color: #000000;
+  color: #ece8e8;
   font-weight: 700;
   font-size: 3rem;
 }
 .midContentContainerDesc p {
-  color: #000000;
+  color: #ece8e8;
   font-size: 1.1rem;
   margin-top: 0.8rem;
   line-height: 25px;
@@ -129,7 +129,7 @@
   align-items: center;
 }
 .aboutUsTitle p{
-  color: #31a5e8;
+  color: #d9d1d1;
   font-size: 3.5rem;
   letter-spacing: 3px;
   font-weight: 700;

@@ -26,7 +26,8 @@
     transition: color 0.2s ease-in-out;
 }
 .list div p:hover{
-    color: hsla(210, 26%, 7%, 1);
+    color: rgb(255, 255, 255);
+    background-color: #05abc4;
 }
 .item1{
     width: 45px;

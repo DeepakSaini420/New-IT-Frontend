@@ -54,7 +54,7 @@ export default function Home() {
             </div>
             <div className={styles.midContentContainerDesc}>
               <p>
-                Vitro is passionate about creating exceptional mobile experiences. Our team specializes in designing and developing custom mobile applications for iOS and Android platforms. From cross-plattform, intuitive user interfaces to robust backend functionality, we strive to deliver seamless and engaging apps that cater to your unique business needs. Whether you &apos re looking to enhance customer engagement, streamline business processes, or tap into new market opportunities, our mobile app solutions are tailored to drive results. With a focus on user experience, performance, and security, we ensure that your app stands out in the crowded app stores and leaves a lasting impression on your target audience.
+              Introducing Vtiro, where innovation meets IT excellence! We are a dynamic IT startup driven by a passion for solving complex tech challenges. With a team of forward-thinking experts, we're committed to delivering cutting-edge solutions that empower businesses to thrive in the digital age. Whether it's streamlining operations through custom software, enhancing cybersecurity,dev-ops or harnessing the power of data analytics, we've got you covered.
               </p>
             </div>
           </div>
@@ -88,10 +88,10 @@ export default function Home() {
             <WhyUsCard img={webSvg} title={'We are global'} text={"No matter where you are, we've got you covered."} />
           </div>
           <div>
-            <WhyUsCard img={chatImg} title={'We value our clients'} text={"Virtual assistance. Talk to us about any concerns, 24/7."}/>
+            <WhyUsCard img={chatImg} title={'We value our clients'} text={"Virtual assistance. Talk to us about any concerns, 24/7 or drop us an email: support@vtiro.com."}/>
           </div>
           <div>
-            <WhyUsCard img={computerImg} title={'Expertise and Technology Stack'} text={"our company boasts a diverse and skilled team proficient in a wide range of technologies"}/>
+            <WhyUsCard img={computerImg} title={'Expertise and Technology Stack'} text={"our company boasts a diverse and skilled team proficient in a wide range of technologies."}/>
           </div>
         </div>
       </div>

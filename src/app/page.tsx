@@ -4,9 +4,10 @@ import Navbar from '../../components/Navbar/Navbar.component'
 import backImg from '../../imgs/back.svg';
 import starImg from '../../imgs/star.svg';
 import headImg from '../../imgs/head.jpg';
-import cloudImg from '../../imgs/cloud_solutions.jpg';
-import webImg from '../../imgs/web_appjpg.jpg';
-import mobileImg from '../../imgs/mobile_app.jpg';
+import cloudImg from '../../imgs/cloud-computing.jpg';
+import webImg from '../../imgs/florian.jpg';
+import mobileImg from '../../imgs/app.jpg';
+import cyberImg from '../../imgs/cybersecurity-1280x720.jpg';
 import chatImg from '../../imgs/chat.svg';
 import webSvg from '../../imgs/websvg.svg';
 import computerImg from '../../imgs/computer.svg';
@@ -54,7 +55,7 @@ export default function Home() {
             </div>
             <div className={styles.midContentContainerDesc}>
               <p>
-              Introducing Vtiro, where innovation meets IT excellence! We are a dynamic IT startup driven by a passion for solving complex tech challenges. With a team of forward-thinking experts, we're committed to delivering cutting-edge solutions that empower businesses to thrive in the digital age. Whether it's streamlining operations through custom software, enhancing cybersecurity,dev-ops or harnessing the power of data analytics, we've got you covered.
+              Introducing Vtiro, where innovation meets IT excellence! We are a dynamic IT startup driven by a passion for solving complex tech challenges. With a team of forward-thinking experts, {"we're"} committed to delivering cutting-edge solutions that empower businesses to thrive in the digital age. Whether {"it's"} streamlining operations through custom software, enhancing cybersecurity,dev-ops or harnessing the power of data analytics, {"we've"} got you covered.
               </p>
             </div>
           </div>
@@ -75,7 +76,7 @@ export default function Home() {
             <AboutServiceCard title='Cloud Solutions' img={cloudImg} description='AWS Services: Scalable, secure cloud solutions, including architecture, deployment, migration, and strategic consulting.'/>
           </div>
           <div className={styles.aboutServiceContainer}>
-            <AboutServiceCard title='Cyber security' img={mobileImg}  description='Data and systems protection. Cybersecurity solutions tailored to specific needs. Cutting-edge technology, security audits, advanced threat detection and incident response. '/>
+            <AboutServiceCard title='Cyber security' img={cyberImg}  description='Data and systems protection. Cybersecurity solutions tailored to specific needs. Cutting-edge technology, security audits, advanced threat detection and incident response. '/>
           </div>
         </div>
       </div>

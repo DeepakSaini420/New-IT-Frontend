@@ -18,7 +18,7 @@ import WhyUsCard from '../../components/WhyUsCard/WhyUsCard.component'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Navbar/>
+      {/* <Navbar/> */}
       <header className={styles.header}>
         <div className={styles.headContent}>
           <div className={styles.content}>

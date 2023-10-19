@@ -1,6 +1,7 @@
 "use client"
 import React,{useState} from 'react'
 import styles from './Navbar.module.css'
+import Link from 'next/link';
 
 function Navbar() {
     const [isOpen,setIsOpen] = useState<boolean>(false);
@@ -9,10 +10,14 @@ function Navbar() {
         <nav className={styles.Navbar}>
             <div className={styles.list}>
                 <div>
-                    <p>Home</p>
+                    <Link href={"/"}>
+                        <p>Home</p>
+                    </Link>
                 </div>
                 <div>
-                    <p>Services</p>
+                    <Link href={"/services"}>
+                        <p>Services</p>
+                    </Link>
                 </div>
                 <div>
                     <p>Contact</p>

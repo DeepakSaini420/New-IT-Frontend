@@ -17,6 +17,9 @@
     justify-content: space-between;
     width: 20%;
 }
+.list div a{
+    text-decoration: none;
+}
 .list div p{
     font-size: 15px;
     font-weight: 700;

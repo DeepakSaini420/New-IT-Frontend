@@ -11,9 +11,7 @@ const services = ()=>{
         <div className={styles.services}>
             <div className={styles.headContent}>
                 <div>
-                    <h1>SERVICES</h1>
-                    <div className={styles.link}>
-                        <Link href={"/"}>Home</Link> {">"} Services 
+                    <div className={styles.link}>  
                     </div>
                 </div>
             </div>

@@ -89,7 +89,7 @@ export default function Home() {
             <WhyUsCard img={webSvg} title={'We are global'} text={"No matter where you are, we've got you covered."} />
           </div>
           <div>
-            <WhyUsCard img={chatImg} title={'We value our clients'} text={"Virtual assistance. Talk to us about any concerns, 24/7 or drop us an email: support@vtiro.com."}/>
+            <WhyUsCard img={chatImg} title={'We value our clients'} text={"Talk to us about any concerns, 24/7 or drop us an email: support@vtiro.com."}/>
           </div>
           <div>
             <WhyUsCard img={computerImg} title={'Expertise and Technology Stack'} text={"our company boasts a diverse and skilled team proficient in a wide range of technologies."}/>

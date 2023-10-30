@@ -20,7 +20,9 @@ function Navbar() {
                     </Link>
                 </div>
                 <div>
-                    <p>Contact</p>
+                    <Link href={"/contact-us"}>
+                        <p>Contact</p>
+                    </Link>
                 </div>
             </div>
             <div className={styles.toggle} onClick={()=>setIsOpen(true)}>

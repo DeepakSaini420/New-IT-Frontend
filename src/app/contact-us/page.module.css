@@ -1,0 +1,90 @@
+.ContactUs{
+    width: 100%;
+}
+
+.headContent{
+    width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.headContent h1{
+    font-size: 5rem;
+    letter-spacing: 8px;
+}
+.link{
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer{
+    width: 100%;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstDiv {
+    width: 50%;
+}
+.form .firstDiv .formHead{
+    margin: 1.5rem 0rem;
+}
+.form .firstDiv .formHead p{
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.inputContainer div{
+    margin-top: 2rem;
+}
+.inputContainer div input{
+    padding: 0.2rem 0rem 1rem 0rem;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    color: #000;
+    border-bottom: 2px solid black ;
+}
+
+.inputContainer div input:focus{
+    outline: none;
+}
+
+.inputContainer div input::placeholder{
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.btnContainer{
+    width: 100%;
+    height: 3.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.btnContainer button{
+    width: 40%;
+    height: 90%;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+}
+.btnContainer button:hover{
+    background-color: #000;
+    color: #fff;
+}

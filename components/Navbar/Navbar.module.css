@@ -29,8 +29,8 @@
     transition: color 0.2s ease-in-out;
 }
 .list div p:hover{
-    color: rgb(255, 255, 255);
-    background-color: #05abc4;
+    color: rgb(0, 0, 0);
+    background-color: #fdaa8e;
 }
 .item1{
     width: 45px;

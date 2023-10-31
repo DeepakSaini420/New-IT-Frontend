@@ -8,9 +8,6 @@ const ContactUs = ()=>{
             <div className={styles.headContent}>
                 <div>
                     <h1>CONTACT US</h1>
-                    <div className={styles.link}>
-                        <Link href={"/"}>Home</Link> {">"} contact-us 
-                    </div>
                 </div>
             </div>
             <div className={styles.formContainer}>

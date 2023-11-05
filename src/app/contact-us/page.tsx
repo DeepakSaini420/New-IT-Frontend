@@ -1,18 +1,29 @@
 "use client"
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './page.module.css';
-import Link from 'next/link';
-import { sendMail } from '@/utils/mail';
 
 const ContactUs = ()=>{
 
-    const email = async ()=>{
+    const [name,setName] = useState<string>('');
+    const [email,setEmail] = useState<string>('');
+    const [phone,setPhone] = useState<string>('');
+    const [additionalMessage,setAdditionalMessage] = useState<string>('');
+
+    const sendEmail = async ()=>{
+        if(name.length===0 || email.length===0) return;
         const data = await fetch('/api/mail',{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'
-            }
+            },
+            body:JSON.stringify({
+                name,
+                email,
+                phone,
+                additionalMessage
+            })
         })
+        alert("Thanks For Choosing Us!");
         console.log(await data.json());
     }
 
@@ -31,13 +42,13 @@ const ContactUs = ()=>{
                         </div>
                         <div className={styles.inputContainer}>
                             <div>
-                                <input type='text' placeholder='Your Name'/>
+                                <input type='text' placeholder='Your Name' onChange={(e:any)=> setName(e.target.value) }/>
                             </div>
                             <div>
-                                <input type='email' placeholder='Email*' required />
+                                <input type='email' placeholder='Email*' required onChange={(e:any)=> setEmail(e.target.value) } />
                             </div>
                             <div>
-                                <input type='phone' placeholder='phone'/>
+                                <input type='phone' placeholder='phone' onChange={(e:any)=> setPhone(e.target.value) }/>
                             </div>
                         </div>
                         <div className={styles.formHead}>
@@ -45,11 +56,11 @@ const ContactUs = ()=>{
                         </div>
                         <div className={styles.inputContainer}>
                             <div>
-                                <input type='text' placeholder='Your Message'/>
+                                <input type='text' placeholder='Your Message' onChange={(e:any)=> setAdditionalMessage(e.target.value) }/>
                             </div>
                         </div>
                         <div className={styles.btnContainer}>
-                            <button onClick={email}>SEND MESSAGE</button>
+                            <button onClick={sendEmail}>SEND MESSAGE</button>
                         </div>
                     </div>
                 </div>

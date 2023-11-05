@@ -1,18 +1,23 @@
 import Mailjet from "node-mailjet";
+import { publicKey,privateKey } from "@/utils/api_key";
 
-type RequestBody = {
-    user_email:string
+type reqData = {
+    name:string,
+    email:string,
+    phone:string,
+    additionalMessage:string
 }
 
 export async function POST(request: Request){
-    console.log(request.body) ;
+    
+    const data:reqData = await request.json();
 
     const mailjet = Mailjet.apiConnect(
-        '7a0a6e7d8ff9de554ec8413298958eea',
-        '13bf9a1d5cc1b42464bd9519385d2224'
+        publicKey,
+        privateKey
       )
   
-      //if(!user_email) return new Response('Hello, From Next.js');
+      if(data.email.length===0) return Response.json('Hello, From Next.js');
   
   
         const requests = mailjet
@@ -21,24 +26,46 @@ export async function POST(request: Request){
             Messages: [
               {
                 From: {
-                  Email: "post@vtiro.com",
+                  Email: "support@vtiro.com",
                 },
                 To: [
                   {
-                    Email: "deepak1247@chitkara.edu.in",
-                    Name: "passenger 1"
+                    Email: data.email,
                   }
                 ],
-                Subject: "Coustomer!",
-                TextPart: "Dear user you get an buy request from a coustomer!",
-                HTMLPart: `<h3>A User with email  have showed interseted in you product named of size  </h3>`
+                Subject: "Thank You!!",
+                HTMLPart: `<h3>Thank You For Choosing Us! We will soon contact you through your Email Address</h3>`
+              }
+            ]
+          })
+
+          const requests1 = mailjet
+          .post('send', { version: 'v3.1' })
+          .request({
+            Messages: [
+              {
+                From: {
+                  Email: "support@vtiro.com",
+                },
+                To: [
+                  {
+                    Email: "kurosay@gmail.com",
+                  }
+                ],
+                Subject: "Customer Mail!",
+                TextPart: "Hello You Got a new Email From Custmoer",
+                HTMLPart: `
+                    <h3>Name:- ${data.name}</h3>
+                    <h3>Email:- ${data.email}</h3>
+                    <h3>${data.additionalMessage}</h3>
+                `
               }
             ]
           })
   
         try {
             const resp = await requests;
-            console.log(resp.body);
+            const resp1 = await requests1;
             return Response.json("Successfull");
         } catch (error) {
             console.log(error)

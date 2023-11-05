@@ -1,8 +1,21 @@
+"use client"
 import React from 'react';
 import styles from './page.module.css';
 import Link from 'next/link';
+import { sendMail } from '@/utils/mail';
 
 const ContactUs = ()=>{
+
+    const email = async ()=>{
+        const data = await fetch('/api/mail',{
+            method:'POST',
+            headers:{
+                'Content-Type':'application/json'
+            }
+        })
+        console.log(await data.json());
+    }
+
     return (
         <div className={styles.ContactUs}>
             <div className={styles.headContent}>
@@ -39,7 +52,7 @@ const ContactUs = ()=>{
                             </div>
                         </div>
                         <div className={styles.btnContainer}>
-                            <button>SEND MESSAGE</button>
+                            <button onClick={email}>SEND MESSAGE</button>
                         </div>
                     </div>
                 </div>

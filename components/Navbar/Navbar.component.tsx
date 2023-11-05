@@ -28,6 +28,7 @@ function Navbar() {
             <div className={styles.toggle} onClick={()=>setIsOpen(true)}>
                 <div className={styles.item1}></div>
                 <div className={styles.item2}></div>
+                <div className={styles.item3}></div>
             </div>
             {
                 isOpen && (
@@ -37,16 +38,23 @@ function Navbar() {
                                 <div>
                                     <div className={styles.item1_active}></div>
                                     <div className={styles.item2_active}></div>
+                                   
                                 </div>
                             </div>
                             <div>
-                                <p>Home</p>
+                                <Link href={"/"}>
+                                    <p>Home</p>
+                                </Link>
                             </div>
                             <div>
-                                <p>Services</p>
+                                <Link href={"/services"}>
+                                    <p>Services</p>
+                                </Link>
                             </div>
                             <div>
-                                <p>Contact</p>
+                                <Link href={"/contact-us"}>
+                                    <p>Contact</p>
+                                </Link>
                             </div>
                         </div>
                         <div className={styles.back}/>

@@ -2,18 +2,21 @@ import Image from 'next/image'
 import Button from '../../components/Button/Button.component'
 import Navbar from '../../components/Navbar/Navbar.component'
 import backImg from '../../imgs/back.svg';
-import starImg from '../../imgs/star.svg';
+import starImg from '../../imgs/star4.png';
 import headImg from '../../imgs/head.jpg';
 import cloudImg from '../../imgs/cloud-computing.jpg';
 import webImg from '../../imgs/florian.jpg';
 import mobileImg from '../../imgs/app.jpg';
 import cyberImg from '../../imgs/cybersecurity-1280x720.jpg';
+import cyberImg001 from '../../imgs/cyber001.jpeg';
+import cyberImg003 from '../../imgs/cyber003.jpeg';
 import chatImg from '../../imgs/chat.svg';
 import webSvg from '../../imgs/websvg.svg';
 import computerImg from '../../imgs/computer.svg';
 import styles from './page.module.css'
 import AboutServiceCard from '../../components/AboutServiceCard/AboutServiceCard.component'
 import WhyUsCard from '../../components/WhyUsCard/WhyUsCard.component'
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -23,7 +26,9 @@ export default function Home() {
         <div className={styles.headContent}>
           <div className={styles.content}>
             <div className={styles.headTitle}>
-              <p>VTIRO</p>
+              <Link href={"/"}>
+                <p>VTIRO</p>
+              </Link> 
             </div>
             <div className={styles.headDescription}>
               <div>
@@ -32,7 +37,9 @@ export default function Home() {
                 <p>your business</p>
               </div>
               <div className={styles.headButton}>
-                <Button text={"REQUEST A CONSULTATION"} />
+                <Link href={"/contact-us"}>
+                  <Button text={"REQUEST A CONSULTATION"} />
+                </Link>  
               </div>
             </div>
           </div>
@@ -70,13 +77,13 @@ export default function Home() {
             <AboutServiceCard title='Mobile App Development' img={mobileImg}  description='We build user-friendly iOS and Android apps, handling design, security, and scalability, with ongoing support.'/>
           </div>
           <div className={styles.aboutServiceContainer}>
-            <AboutServiceCard title='Web App Development' img={webImg} description='DevOps and Architecture (Docker, Kubernetes, Ansible, RabbitMQ ...), Fullstack development - frontend (React, NodeJS, NextJS, Flutter) & backend (Java/Kotlin, Python, C++, .NET), '/>
+            <AboutServiceCard title='Web App Development' img={webImg} description='DevOps and Architecture (Docker, Kubernetes, Ansible...), Fullstack development.'/>
           </div>
           <div className={styles.aboutServiceContainer}>
             <AboutServiceCard title='Cloud Solutions' img={cloudImg} description='AWS Services: Scalable, secure cloud solutions, including architecture, deployment, migration, and strategic consulting.'/>
           </div>
           <div className={styles.aboutServiceContainer}>
-            <AboutServiceCard title='Cyber security' img={cyberImg}  description='Data and systems protection. Cybersecurity solutions tailored to specific needs. Cutting-edge technology, security audits, advanced threat detection and incident response. '/>
+            <AboutServiceCard title='Cyber security' img={cyberImg}  description='Data and systems protection. Cybersecurity solutions from user, infrastructure to network and software level.'/>
           </div>
         </div>
       </div>
@@ -96,16 +103,20 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.footer}>
-        <div className={styles.footerDescription}>
-          <div>
-            <p>Unlock innovation and elevate your</p>
-            <p>digital presence with our tech-</p>
-            <p>savvy team, specializing in web </p> 
-            <p>development, cloud solutions,</p>
-            <p>and mobile applications.</p>
+      <div className={styles.aboutUs}>
+        <div className={styles.aboutUsTitle}>
+          <p>What We Can Do For You</p>
+        </div>
+        <div className={styles.aboutServices}>
+          <div className={styles.aboutServiceContainer}>
+            <AboutServiceCard title='Cloud Solutions' img={cyberImg001} description='AWS Services: Scalable, secure cloud solutions, including architecture, deployment, migration, and strategic consulting.'/>
+          </div>
+          <div className={styles.aboutServiceContainer}>
+            <AboutServiceCard title='Cyber security' img={cyberImg003}  description='Data and systems protection. Cybersecurity solutions tailored to specific needs. Cutting-edge technology, security audits, advanced threat detection and incident response. '/>
           </div>
         </div>
+      </div>
+      <div className={styles.footer}>
         <div className={styles.contactUs}>
           <div className={styles.outterDiv}>
             <div className={styles.contactUsContentContainer}>
@@ -114,17 +125,18 @@ export default function Home() {
                 <p>Reach out for an exploratory conversation.</p>
               </div>
               <div className={styles.contactUsButton}>
-                <Button text='Contact Us'/>
+                <Link href={"/contact-us"}>
+                  <Button text='Contact Us'/>
+                </Link>   
               </div>
               <div className={styles.emailUsContainer}>
-                <p>EMAIL</p>
                 <p>support@vtiro.com</p>
               </div>
             </div>
             <div className={styles.headImageContianer}>
               <div>
                 <Image src={backImg} alt='background.img' width={500} height={500} className={styles.backImg}/>
-                <Image src={starImg} alt='star.img' width={150} height={150} className={styles.starImg}/>
+                <Image src={starImg} alt='star4.img' width={150} height={150} className={styles.starImg}/>
                 <Image src={headImg} alt='head.img' width={500} height={500} className={styles.headImg}/>
               </div>
             </div>

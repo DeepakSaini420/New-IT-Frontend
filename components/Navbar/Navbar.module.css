@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 0.5em;
 }
 
 .Navbar .list{

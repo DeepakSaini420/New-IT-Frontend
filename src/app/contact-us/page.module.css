@@ -61,7 +61,7 @@
 
 .inputContainer div input::placeholder{
     font-size: 1.2rem;
-    color: rgb(147, 147, 147);
+    color: gray;
 }
 
 .btnContainer{

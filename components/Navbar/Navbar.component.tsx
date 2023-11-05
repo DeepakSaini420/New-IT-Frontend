@@ -42,13 +42,19 @@ function Navbar() {
                                 </div>
                             </div>
                             <div>
-                                <p>Home</p>
+                                <Link href={"/"}>
+                                    <p>Home</p>
+                                </Link>
                             </div>
                             <div>
-                                <p>Services</p>
+                                <Link href={"/services"}>
+                                    <p>Services</p>
+                                </Link>
                             </div>
                             <div>
-                                <p>Contact</p>
+                                <Link href={"/contact-us"}>
+                                    <p>Contact</p>
+                                </Link>
                             </div>
                         </div>
                         <div className={styles.back}/>

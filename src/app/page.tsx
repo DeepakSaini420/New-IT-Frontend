@@ -16,6 +16,7 @@ import computerImg from '../../imgs/computer.svg';
 import styles from './page.module.css'
 import AboutServiceCard from '../../components/AboutServiceCard/AboutServiceCard.component'
 import WhyUsCard from '../../components/WhyUsCard/WhyUsCard.component'
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -25,7 +26,9 @@ export default function Home() {
         <div className={styles.headContent}>
           <div className={styles.content}>
             <div className={styles.headTitle}>
-              <p>VTIRO</p>
+              <Link href={"/"}>
+                <p>VTIRO</p>
+              </Link> 
             </div>
             <div className={styles.headDescription}>
               <div>
@@ -34,7 +37,9 @@ export default function Home() {
                 <p>your business</p>
               </div>
               <div className={styles.headButton}>
-                <Button text={"REQUEST A CONSULTATION"} />
+                <Link href={"/contact-us"}>
+                  <Button text={"REQUEST A CONSULTATION"} />
+                </Link>  
               </div>
             </div>
           </div>
@@ -120,7 +125,9 @@ export default function Home() {
                 <p>Reach out for an exploratory conversation.</p>
               </div>
               <div className={styles.contactUsButton}>
-                <Button text='Contact Us'/>
+                <Link href={"/contact-us"}>
+                  <Button text='Contact Us'/>
+                </Link>   
               </div>
               <div className={styles.emailUsContainer}>
                 <p>support@vtiro.com</p>

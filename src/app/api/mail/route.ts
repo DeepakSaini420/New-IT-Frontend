@@ -11,7 +11,7 @@ type reqData = {
 export async function POST(request: Request){
     
     const data:reqData = await request.json();
-    console.log(publicKey,privateKey);
+
     const mailjet = Mailjet.apiConnect(
         publicKey,
         privateKey

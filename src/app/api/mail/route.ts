@@ -49,7 +49,7 @@ export async function POST(request: Request){
                 },
                 To: [
                   {
-                    Email: "kurosay@gmail.com",
+                    Email: "support@vtiro.com",
                   }
                 ],
                 Subject: "Customer Mail!",

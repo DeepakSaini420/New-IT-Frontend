@@ -38,7 +38,7 @@ const services = ()=>{
                
             </div>
     */}
-
+{/*
         <div className={styles.aboutUs}>
             <div className={styles.aboutUsTitle}>
                 <p>Cybersecurity</p>
@@ -51,6 +51,40 @@ const services = ()=>{
                 <div>Software Updates</div>
                 <div>Endpoint Security</div>
             </div>
+        </div>*/}
+        <div className={styles.aboutUs}>
+            <div className={styles.aboutUsTitle}>
+                <p>Cybersecurity</p>
+            </div>
+            <div className={styles.cyberServices}>
+                <div>Strong Authentication</div>
+                <div>Email Security</div>
+                <div>Access Control</div>
+                <div>Security Training</div>
+                <div>Software Updates</div>
+                <div>Endpoint Security</div>
+            </div>
+            <div className={styles.lowerSecDescription}>
+          <div>
+          <p>In a work setting, cybersecurity needs are essential to protect sensitive business information and ensure the overall security of the organization</p>
+          </div>
+        </div>
+        </div>
+        <div className={styles.webDevServicesSec}>
+            <div className={styles.webDevServicesTitle}>
+                <p>Web Development</p>
+            </div>
+            <div className={styles.webDevServices}>
+                <div>Fullstack</div>
+                <div>Frontend</div>
+                <div>Backend</div>
+                <div>Devops</div>
+            </div>
+            <div className={styles.bottomSecDescription}>
+          <div>
+          <p>Our team crafts engaging web applications, with DevOps experts streamlining development and deployment, ensuring seamless, efficient project delivery.</p>
+          </div>
+        </div>
         </div>
 
     </div>

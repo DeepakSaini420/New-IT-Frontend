@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './AboutServiceCard.module.css';
+import Button from '../Button/Button.component';
 
 const AboutServiceCard = ({title,description,img}:{title:string,description:string,img:any})=>{
     return (
@@ -14,6 +15,9 @@ const AboutServiceCard = ({title,description,img}:{title:string,description:stri
                 <div className={styles.contentContainer}>
                     <p>{description}</p>
                 </div>
+            </div>
+            <div>
+                <Button text={"Read More"}/>
             </div>
         </div>
     )

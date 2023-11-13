@@ -42,17 +42,17 @@ function Navbar() {
                                 </div>
                             </div>
                             <div>
-                                <Link href={"/"}>
+                                <Link href={"/"} onClick={()=>setIsOpen(false)}>
                                     <p>Home</p>
                                 </Link>
                             </div>
                             <div>
-                                <Link href={"/services"}>
+                                <Link href={"/services"} onClick={()=>setIsOpen(false)}>
                                     <p>Services</p>
                                 </Link>
                             </div>
                             <div>
-                                <Link href={"/contact-us"}>
+                                <Link href={"/contact-us"} onClick={()=>setIsOpen(false)}>
                                     <p>Contact</p>
                                 </Link>
                             </div>

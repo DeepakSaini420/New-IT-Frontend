@@ -65,11 +65,10 @@ const services = ()=>{
                 <div>Endpoint Security</div>
             </div>
             <div className={styles.lowerSecDescription}>
-          <div>
-          <p>In a work setting, cybersecurity needs are essential to protect sensitive business information and ensure the overall security of the organization</p>
-          </div>
-        </div>
-        </div>
+                <div>
+                    <p>In a work setting, cybersecurity needs are essential to protect sensitive business information and ensure the overall security of the organization</p>
+                </div>
+            </div>
         <div className={styles.webDevServicesSec}>
             <div className={styles.webDevServicesTitle}>
                 <p>Web Development</p>
@@ -81,12 +80,13 @@ const services = ()=>{
                 <div>Devops</div>
             </div>
             <div className={styles.bottomSecDescription}>
-          <div>
-          <p>Our team crafts engaging web applications, with DevOps experts streamlining development and deployment, ensuring seamless, efficient project delivery.</p>
-          </div>
-        </div>
+                <div>
+                    <p>Our team crafts engaging web applications, with DevOps experts streamlining development and deployment, ensuring seamless, efficient project delivery.</p>
+                </div>
+            </div>
         </div>
 
+        </div>
     </div>
     )
 }

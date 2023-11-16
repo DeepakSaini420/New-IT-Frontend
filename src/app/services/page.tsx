@@ -22,8 +22,7 @@ const services = ()=>{
                 </div>
                 <div className={styles.cardContainer}>
                     <div className={styles.AboutServiceCard}>
-                        <ServicePageCard title="Mobile App Development" description="We offer creation of mobile applications for various platforms, including iOS (iPhone and iPad) and Android. This includes both native and cross-platform app development.
-                        " img={TestImg}/>
+                        <ServicePageCard title="Mobile App Development" description="We build user-friendly iOS and Android apps, handling design, security, and scalability, with ongoing support." img={TestImg}/>
                     </div>
                     <div className={styles.AboutServiceCard}>
                         <ServicePageCard title="Cybersecurity" description="Tailored solutions to meet the specific needs of clients, from concept to design and development." img={img2}/>

@@ -74,16 +74,16 @@ export default function Home() {
         </div>
         <div className={styles.aboutServices}>
           <div className={styles.aboutServiceContainer}>
-            <AboutServiceCard title='Mobile App Development' img={mobileImg}  description='We build user-friendly iOS and Android apps, handling design, security, and scalability, with ongoing support.'/>
+            <AboutServiceCard title='Mobile App Development' img={mobileImg}  description='We build user-friendly iOS and Android apps, handling design, security, and scalability, with ongoing support'/>
           </div>
           <div className={styles.aboutServiceContainer}>
-            <AboutServiceCard title='Web App Development' img={webImg} description='DevOps and Architecture (Docker, Kubernetes, Ansible...), Fullstack development.'/>
+            <AboutServiceCard title='Web App Development' img={webImg} description='DevOps and Architecture (Docker, Kubernetes, Ansible...), Fullstack development'/>
           </div>
           <div className={styles.aboutServiceContainer}>
-            <AboutServiceCard title='Cloud Solutions' img={cloudImg} description='AWS Services: Scalable, secure cloud solutions, including architecture, deployment, migration, and strategic consulting.'/>
+            <AboutServiceCard title='Cloud Solutions' img={cloudImg} description='AWS Services: Scalable, secure cloud solutions, including architecture, deployment, migration, and strategic consulting'/>
           </div>
           <div className={styles.aboutServiceContainer}>
-            <AboutServiceCard title='Cyber security' img={cyberImg}  description='Data and systems protection. Cybersecurity solutions from user, infrastructure to network and software level.'/>
+            <AboutServiceCard title='Cyber security' img={cyberImg}  description='Data and systems protection. Cybersecurity solutions from user, infrastructure to network and software level'/>
           </div>
         </div>
       </div>
@@ -93,26 +93,26 @@ export default function Home() {
         </div>
         <div className={styles.services}>
           <div>
-            <WhyUsCard img={webSvg} title={'We are global'} text={"No matter where you are, we've got you covered."} />
+            <WhyUsCard img={webSvg} title={'We are global'} text={"No matter where you are, we've got you covered"} />
           </div>
           <div>
-            <WhyUsCard img={chatImg} title={'We value our clients'} text={"Talk to us about any concerns, 24/7 or drop us an email: support@vtiro.com."}/>
+            <WhyUsCard img={chatImg} title={'We value our clients'} text={"Talk to us about any concerns, and drop us an email: support@vtiro.com"}/>
           </div>
           <div>
-            <WhyUsCard img={computerImg} title={'Expertise and Technology Stack'} text={"our company boasts a diverse and skilled team proficient in a wide range of technologies."}/>
+            <WhyUsCard img={computerImg} title={'Expertise and Technology Stack'} text={"our company boasts a diverse and skilled team proficient in a wide range of technologies"}/>
           </div>
         </div>
       </div>
       <div className={styles.aboutUs}>
         <div className={styles.aboutUsTitle}>
-          <p>What We Can Do For You</p>
+          <p>Services</p>
         </div>
         <div className={styles.aboutServices}>
           <div className={styles.aboutServiceContainer}>
-            <AboutServiceCard title='Cloud Solutions' img={cyberImg001} description='AWS Services: Scalable, secure cloud solutions, including architecture, deployment, migration, and strategic consulting.'/>
+            <AboutServiceCard title='Cloud Solutions' img={cyberImg001} description='AWS Services: Scalable, secure cloud solutions, including architecture, deployment, migration, and strategic consulting'/>
           </div>
           <div className={styles.aboutServiceContainer}>
-            <AboutServiceCard title='Cyber security' img={cyberImg003}  description='Data and systems protection. Cybersecurity solutions tailored to specific needs. Cutting-edge technology, security audits, advanced threat detection and incident response. '/>
+            <AboutServiceCard title='Cyber security' img={cyberImg003}  description='Data and systems protection. Cybersecurity tailored to specific needs. Cutting-edge technology, security audits, advanced threat detection and incident response'/>
           </div>
         </div>
       </div>
@@ -129,9 +129,10 @@ export default function Home() {
                   <Button text='Contact Us'/>
                 </Link>   
               </div>
+              {/*
               <div className={styles.emailUsContainer}>
                 <p>support@vtiro.com</p>
-              </div>
+              </div>*/}
             </div>
             <div className={styles.headImageContianer}>
               <div>

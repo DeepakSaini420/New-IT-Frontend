@@ -105,11 +105,12 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding: 2rem 4rem;
   }
   .lowerSecDescription div p{
-    font-weight: 800;
+    font-weight: 100;
     color:#000000;
-    font-size: 3.8rem;
+    font-size: 1.8rem;
   }
 
   .webDevServices{
@@ -179,31 +180,43 @@
     align-items: center;
   }
   .bottomSecDescription div p{
-    font-weight: 800;
+    font-weight: 100;
     color:#ffffff;
-    font-size: 3.8rem;
+    font-size: 1.8rem;
   }
 
 @media screen and (max-width:1030px) {
     .lowerSecDescription div p{
-        font-size: 2.8rem;
+        font-size: 1.5rem;
+    }
+    .lowerSecDescription {
+        height: 95vh;
     }
     .bottomSecDescription div p{
-        font-size: 2.8rem;
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width:830px) {
     .lowerSecDescription div p{
-        font-size: 2.1rem;
+        font-size: 1.5rem;
+    }
+    .lowerSecDescription {
+        height: 95vh;
     }
     .bottomSecDescription div p{
-        font-size: 2.8rem;
+        font-size: 1.5rem;
     }
 }
 
 @media screen and (max-width:450px) {
     .bottomSecDescription div p{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+    }
+    .lowerSecDescription {
+        height: 95vh;
+    }
+    .lowerSecDescription div p{
+        font-size: 1.5rem;
     }
 }

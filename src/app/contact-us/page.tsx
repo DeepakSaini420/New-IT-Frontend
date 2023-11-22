@@ -60,7 +60,7 @@ const ContactUs = ()=>{
                             </div>
                         </div>
                         <div className={styles.btnContainer}>
-                            <button onClick={sendEmail}>SEND MESSAGE</button>
+                            <button onClick={sendEmail}>SEND</button>
                         </div>
                     </div>
                 </div>

@@ -11,9 +11,8 @@ const services = ()=>{
     return (
         <div className={styles.services}>
             <div className={styles.headContent}>
-                <div>
-                    <div className={styles.link}>  
-                    </div>
+            <div>
+                    <h1>SERVICES</h1>
                 </div>
             </div>
             <div className={styles.mid_content}>
@@ -65,7 +64,13 @@ const services = ()=>{
             </div>
             <div className={styles.lowerSecDescription}>
                 <div>
-                    <p>In a work setting, cybersecurity needs are essential to protect sensitive business information and ensure the overall security of the organization</p>
+                    <p>At, Vtiro we prioritize your digital security in an ever-evolving cyber landscape. Our commitment to cybersecurity is at the core of our mission, 
+                       as we understand the critical importance of protecting your sensitive information. In Vtiro, we employ cutting-edge technologies and industry best practices to 
+                       ensure the confidentiality, integrity, and availability of your data. From robust firewalls to advanced encryption protocols, 
+                       we have implemented a comprehensive suite of security measures to safeguard against cyber threats. 
+                       Our team of dedicated cybersecurity experts continually monitors and adapts to emerging risks, providing you with a secure environment for your online activities. 
+                       We believe in fostering a culture of awareness and education, empowering you to make informed decisions about your digital safety. 
+                       Trust Vtiro to be your partner in cybersecurity, delivering peace of mind in an interconnected world.</p>
                 </div>
             </div>
         <div className={styles.webDevServicesSec}>
@@ -80,7 +85,9 @@ const services = ()=>{
             </div>
             <div className={styles.bottomSecDescription}>
                 <div>
-                    <p>Our team crafts engaging web applications, with DevOps experts streamlining development and deployment, ensuring seamless, efficient project delivery.</p>
+                    <p>At our company, we offer comprehensive web development and DevOps services that drive your online success. Our web development team crafts engaging websites and 
+                        web applications, while our DevOps experts streamline development and deployment, ensuring seamless, efficient project delivery. 
+                        Partner with us to enhance your digital presence and accelerate your software development lifecycle.</p>
                 </div>
             </div>
         </div>

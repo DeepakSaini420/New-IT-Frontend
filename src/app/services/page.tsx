@@ -64,12 +64,10 @@ const services = ()=>{
             </div>
             <div className={styles.lowerSecDescription}>
                 <div>
-                    <p>At, Vtiro we prioritize your digital security in an ever-evolving cyber landscape. Our commitment to cybersecurity is at the core of our mission, 
-                       as we understand the critical importance of protecting your sensitive information. In Vtiro, we employ cutting-edge technologies and industry best practices to 
+                    <p>At, Vtiro we prioritize your digital security in an ever-evolving cyber landscape. In Vtiro, we employ cutting-edge technologies and industry best practices to 
                        ensure the confidentiality, integrity, and availability of your data. From robust firewalls to advanced encryption protocols, 
                        we have implemented a comprehensive suite of security measures to safeguard against cyber threats. 
-                       Our team of dedicated cybersecurity experts continually monitors and adapts to emerging risks, providing you with a secure environment for your online activities. 
-                       We believe in fostering a culture of awareness and education, empowering you to make informed decisions about your digital safety. 
+                       Our team of dedicated cybersecurity experts continually monitors and adapts to emerging risks, providing you with a secure environment for your online activities.
                        Trust Vtiro to be your partner in cybersecurity, delivering peace of mind in an interconnected world.</p>
                 </div>
             </div>

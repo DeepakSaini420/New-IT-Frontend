@@ -184,7 +184,6 @@
     color:#ffffff;
     font-size: 1.8rem;
   }
-
 @media screen and (max-width:1030px) {
     .lowerSecDescription div p{
         font-size: 1.5rem;
@@ -196,7 +195,6 @@
         font-size: 1.5rem;
     }
 }
-
 @media screen and (max-width:830px) {
     .lowerSecDescription div p{
         font-size: 1.5rem;
@@ -208,7 +206,6 @@
         font-size: 1.5rem;
     }
 }
-
 @media screen and (max-width:450px) {
     .bottomSecDescription div p{
         font-size: 1.5rem;
@@ -218,5 +215,5 @@
     }
     .lowerSecDescription div p{
         font-size: 1.5rem;
-    }
+    }   
 }

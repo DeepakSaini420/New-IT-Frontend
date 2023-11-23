@@ -88,3 +88,19 @@
     background-color: #000;
     color: #fff;
 }
+
+@media screen and (max-width:1030px) {
+    .headContent h1{
+        font-size: 3rem;
+    }  
+}
+@media screen and (max-width:830px) {    
+    .headContent h1{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:450px) {
+    .headContent h1{
+        font-size: 3rem;
+    }
+}

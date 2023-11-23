@@ -206,6 +206,39 @@
         font-size: 1.5rem;
     }
 }
+@media only screen and (max-width:480px) {
+    .bottomSecDescription div p{
+        font-size: 1.5rem;
+    }
+    .lowerSecDescription {
+        height: 95vh;
+    }
+    .lowerSecDescription div p{
+        font-size: 1.5rem;
+    }  
+}
+@media only screen and (max-width:350px) {
+    .bottomSecDescription div p{
+        font-size: 1.5rem;
+    }
+    .lowerSecDescription {
+        height: 95vh;
+    }
+    .lowerSecDescription div p{
+        font-size: 1.5rem;
+    }   
+}
+@media only screen and (max-width:350px) {
+    .bottomSecDescription div p{
+        font-size: 1.5rem;
+    }
+    .lowerSecDescription {
+        height: 95vh;
+    }
+    .lowerSecDescription div p{
+        font-size: 1.5rem;
+    }   
+}
 @media screen and (max-width:450px) {
     .bottomSecDescription div p{
         font-size: 1.5rem;
